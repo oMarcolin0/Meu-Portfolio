@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Pedro Marcolino</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img
+                src="https://res.cloudinary.com/dbfn5lnvx/image/upload/v1648478885/learnhtmlcss/portfolio/logo.svg"
+                alt="Pedro Marcolino logo"
+                width="45"
+                height="43"
+            />
+            <nav class="nav-container">
+                <a href="#about-me" class="btn btn-nav">Sobre mim</a>
+                <a href="#portfolio" class="btn btn-nav">Portfólio</a>
+                <a href="#experience" class="btn btn-nav">Experiência</a>
+                <a href="#hire-me" class="btn btn-raised">Contrate-me</a>
+            </nav>
+            <button id="toggle-theme" aria-label="Toggle dark theme">
+                <!-- Aqui vai o SVG do tema -->
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="texts">
+                <h1 class="intro-name">Pedro <strong>Marcolino </strong></h1>
+                <h2 class="intro-text"> <strong> Web</strong> Developer</h2>
+
+                <p class="text--xl">
+                  Pedro é um desenvolvedor de Software 
+                </p>
+                <p class="text--xl-2">Transformo ideias em experiências digitais únicas.</p>
+            </div>
+            <div  class="img-container">
+                 <img src="./src/perfil.jpeg" alt="imagem do desenvolvedor Pedro" class="img-pedro" width="500px">
+            </div>
+        </div>
+        <div class="scroll-down" id="scroll-down">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="48px"
+            viewBox="0 0 24 24"
+            width="48px"
+            fill="var(--scroll-fill)"
+          >
+            <path d="M0 0h24v24H0V0z" fill="none" />
+            <path
+              d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+              stroke="var(--light-icon)"
+            />
+          </svg>
+        </div>
+
+        <section id="about-me" class="about">
+            <h2 class="title-text">Sobre mim</h2>
+            <p class="text-normal">
+                Olá! Sou <strong>Pedro Marcolino</strong>, estudante de Engenharia de Computação e apaixonado por tecnologia. 
+                Tenho interesse em desenvolvimento de software e gosto de transformar ideias em soluções reais, 
+                combinando lógica, design e criatividade.
+            </p>
+            <p class="text-normal">
+                Já desenvolvi projetos em linguagens como <strong>C</strong> e <strong>Assembly</strong>, 
+                além de aplicações modernas com <strong>React</strong>, <strong>React Native</strong>, <strong>Next.js</strong>, 
+                <strong>Node.js</strong> e <strong>MySQL</strong>. 
+                Também gosto de explorar o lado da eletrônica digital, criando circuitos e simulando sistemas lógicos.
+            </p>
+            <p class="text-normal">
+                Meu objetivo é continuar evoluindo como programador e engenheiro, 
+                criando soluções que unam eficiência, usabilidade e inovação.
+            </p>
+        </section>
+
+        <section class="portfolio" id="portfolio" >
+            <h2 class="title-text">Projetos</h2>
+            
+            <div class="to-do-app">
+                <img src="./src/to-do.webp" alt="img todo app" width="300px" class="project-images">
+                <p class="text-normal">
+                    Criei um aplicativo de tarefas simples e funcional usando apenas HTML, CSS e JavaScript puro. O projeto permite adicionar, remover e marcar tarefas como concluídas, armazenando as informações no navegador através do localStorage. Esse app foi essencial para consolidar minha lógica de programação, manipulação do DOM e domínio das bases do JavaScript moderno sem o uso de frameworks.
+                </p>
+            </div>
+            <div class="app-guargian">
+                <p class="text-normal">
+                    Desenvolvi o App Guardian com React Native usando ExpoRouter, um aplicativo voltado à segurança e monitoramento pessoal. O objetivo do projeto foi criar uma solução prática e intuitiva para auxiliar o usuário em situações de emergência, com interface leve e responsiva. Nesse projeto, aprofundei meu conhecimento em desenvolvimento mobile multiplataforma, componentes nativos e integração com recursos do dispositivo.
+                </p>
+                <div class="img-project-container">
+                    <img src="./src/Captura de tela 2025-10-28 005147.png" alt="imagem logo app-guargian" width="300px" class="project-images">
+                </div>
+                
+            </div>
+            <div class="spotify">
+                <img src="./src/spotify.png" alt="imagem do logo spotify" width="300px" class="project-images">
+                <p class="text-normal">
+                    Desenvolvi uma aplicação inspirada no Spotify utilizando React, com foco em recriar a interface moderna e interativa da plataforma. O projeto inclui componentes reutilizáveis, navegação fluida entre playlists e integração com dados dinâmicos simulados. Esse app foi uma ótima oportunidade para aprimorar meus conhecimentos em componentização, hooks e gerenciamento de estado, além de aplicar boas práticas de UI/UX no front-end.
+                </p>
+            </div>
+        </section>
+        
+    </main>
+</body>
+</html>
