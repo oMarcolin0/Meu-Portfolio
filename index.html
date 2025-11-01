@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Pedro Marcolino</title>
 </head>
 <body>
@@ -77,31 +78,54 @@
                 criando soluções que unam eficiência, usabilidade e inovação.
             </p>
         </section>
-
-        <section class="portfolio" id="portfolio" >
-            <h2 class="title-text">Projetos</h2>
+        <h2 class="title-text">Projetos</h2>
+        <section class="portfolio"  >
             
-            <div class="to-do-app">
-                <img src="./src/to-do.webp" alt="img todo app" width="300px" class="project-images">
+            
+            <div id="to-do-app" class="project-container">
+                <img src="./src/todo limg att.png" alt="img todo app" width="200px" class="project-images">
                 <p class="text-normal">
                     Criei um aplicativo de tarefas simples e funcional usando apenas HTML, CSS e JavaScript puro. O projeto permite adicionar, remover e marcar tarefas como concluídas, armazenando as informações no navegador através do localStorage. Esse app foi essencial para consolidar minha lógica de programação, manipulação do DOM e domínio das bases do JavaScript moderno sem o uso de frameworks.
                 </p>
             </div>
-            <div class="app-guargian">
+            <div class="project-container" id="app-guargian" >
+                 <div class="img-project-container">
+                    <img src="./src/Captura de tela 2025-10-28 005147.png" alt="imagem logo app-guargian" width="200px" class="project-images">
+                </div>
+                
                 <p class="text-normal">
                     Desenvolvi o App Guardian com React Native usando ExpoRouter, um aplicativo voltado à segurança e monitoramento pessoal. O objetivo do projeto foi criar uma solução prática e intuitiva para auxiliar o usuário em situações de emergência, com interface leve e responsiva. Nesse projeto, aprofundei meu conhecimento em desenvolvimento mobile multiplataforma, componentes nativos e integração com recursos do dispositivo.
                 </p>
-                <div class="img-project-container">
-                    <img src="./src/Captura de tela 2025-10-28 005147.png" alt="imagem logo app-guargian" width="300px" class="project-images">
-                </div>
-                
+               
             </div>
-            <div class="spotify">
-                <img src="./src/spotify.png" alt="imagem do logo spotify" width="300px" class="project-images">
+            <div id="spotify" class="project-container"">
+                <img src="./src/spotify.png" alt="imagem do logo spotify" width="200px" class="project-images">
                 <p class="text-normal">
                     Desenvolvi uma aplicação inspirada no Spotify utilizando React, com foco em recriar a interface moderna e interativa da plataforma. O projeto inclui componentes reutilizáveis, navegação fluida entre playlists e integração com dados dinâmicos simulados. Esse app foi uma ótima oportunidade para aprimorar meus conhecimentos em componentização, hooks e gerenciamento de estado, além de aplicar boas práticas de UI/UX no front-end.
                 </p>
             </div>
+        </section>
+
+        <section class="hire-me">
+            
+            <div class="inputs-container">
+                <h3 class="hire-me-title">Contrate-Me</h3>
+
+                
+
+                <div class="float-input">
+                    <input type="text" placeholder="" required>
+                    <label for="name">Seu Nome</label>
+                </div><br>
+
+                <div class="float-input">
+                    <input type="text" placeholder="" required>
+                    <label>Seu Email</label>
+                </div>
+
+                <a href="#https://wa.me/5551999597630"  id="btn-whats"> <i class="fa-brands fa-whatsapp"></i>   WhatsApp  </a>
+            </div>
+
         </section>
         
     </main>

@@ -23,6 +23,7 @@ body::after {
     pointer-events: none; /* não interfere em cliques */
     background: linear-gradient(to bottom, transparent, var(--dark-blue));
 }
+
 html {
         background-color: var(--dark-blue);
         color: var(--text-color);
@@ -117,6 +118,7 @@ a.btn-nav:hover {
 }
 .img-pedro{
     padding: 20px;
+    border: none;
     border-radius: 50%;
 }
 .scroll-down {
@@ -154,8 +156,10 @@ a.btn-nav:hover {
 }
 
 .title-text{
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 1.5rem;
+    padding: 5rem;
+    margin-left: 10rem;
 }
 .text-normal{
     font-size: 2rem;
@@ -166,13 +170,96 @@ a.btn-nav:hover {
 }
 .portfolio{
     padding: 20px;
-    margin: 20rem;
+    display: grid;
+    margin-left: 10rem;
+    grid-template-columns: 500px 500px 500px;
+    gap: 10rem;
 }
-.spotify,
-.app-guardian,
-.to-do-app{
-    display: flex;
+.project-container{
+     max-width: 650px;
+    border:  var(--gray-dark);
+    padding: 10rem;
+    
+    background-color:#4c008244;
+    border-radius: 10px;
+     box-shadow: 0 0 28px rgba(0, 0, 0, 0.35);
+     transition: 0.3s;
+}
+.project-container:hover{
+    scale: 1.1;
 }
 .project-images{
     border-radius: 50%;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.78);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.hire-me{
+    display: flex;
+    justify-self: center;
+    
+}
+.hire-me-title{
+    font-size: 4rem;
+    padding: 2rem;
+    left: 2rem;
+}
+.inputs-container{
+    flex-direction: column;
+    background-color: #4c008244;
+    padding: 10rem;
+    margin-top: 10rem;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 28px rgba(0, 0, 0, 0.35);
+}
+.float-input {
+  position: relative;
+  background-color: #666;
+  border-radius: 8px;
+  padding: 14px 10px 6px;
+  width: 500px;
+  margin-bottom: 5rem;
+}
+
+.float-input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.float-input label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: .25s;
+  color: #f5f5f1;
+  pointer-events: none;
+}
+
+/* Quando digita ou foca */
+.float-input input:focus + label,
+.float-input input:not(:placeholder-shown) + label {
+  top: 8px;
+  font-size: 1.5rem;
+  color:  #8c7aff;;
+}
+#btn-whats{
+    width: 600px;
+    background-color: var(--primary);
+    color: var(--beige);
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+#btn-whats:hover{
+    opacity: 0.8;
+    cursor: pointer;
 }
